@@ -11,7 +11,7 @@ const fs = require("fs");
 //fs to write file to 'logo.svg'
 //300x200 px image
 
-const qwuestions = [
+const questions = [
   { type: "input", message: "Logo color?", name: "color" },
   {
     type: "list",
@@ -26,11 +26,21 @@ function userPrompt(questions) {
   // response is an object with keys equal to the names in the questions array
   inquirer
     .prompt(questions)
-    .then((response) => writeToFile("README.md", markdown(response)));
+    .then((response) => writeToFile("./examples/logo.svg", TBD));
 }
 
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+  fs.writeFile(fileName, data, (err) =>
+    err ? console.error(err) : console.log("logo.svg generated")
+  );
+}
 
 //import js file for shape classes
 //jest for unit tests
 //video submission
+
+function init() {
+  userPrompt(questions);
+}
+
+init();
