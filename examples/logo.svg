@@ -1,4 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="300" width="200">
-        <rect x="25" y="75" height="150" width="150" fill="red" />
-        <text text-anchor="middle" x="100" y="150" font-size="60" fill="black">OKO</text>
-        </svg>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="300" width="200"><rect x="25" y="75" height="150" width="150" fill="Blue" /><text text-anchor="middle" x="100" y="150" font-size="60" fill="black">TES</text></svg>
